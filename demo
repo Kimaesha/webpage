@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learning Driving License</title>
+	<style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h2>Learning Driving License</h2>
+<h3>*Requried field</h3>
+<form action="process_form.php" method="POST" enctype="multipart/form-data">
+	<fieldset>
+		<fieldset>
+    <legend>Personal details</legend>
+	<label>Name:*
+	<input type="name"  name="name" placeholder ="Name"requried> 
+	<label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+	<label>Date of Birth
+	<input type="dates"  name="date" placeholder="mm/dd/yyyy">
+	<label>Educational Qualification*
+	<input type="text"  name="name" placeholder="Educational Qualification" required><br><br>
+	<label>Email id
+	<input type="text"  name="name" placeholder="Email id">
+	<label>Contact Number
+	<input type="number"  name="name" placeholder="number">
+	<label>Permanent Address
+	<input type="text"  name="name" placeholder="Address">
+	<label>Identification Mark*
+	<input type="text"  name="name" placeholder="Identification Mark" required><br><br>
+	<label for="Blood Group">Blood group:</label>
+        <select id="group" name="group">
+            <option value="o+">O+</option>
+            <option value="ab">AB</option>
+            <option value="a">A</option>
+        </select><br><br>
+        <label for="vehicleType">Vehicle type:</label>
+        <select id="vehicleType" name="vehicleType">
+            <option value="car">Car</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="truck">Truck</option>
+            <option value="bicycle">Bicycle</option>
+            <option value="scooter">Scooter</option>
+        </select>
+</fieldset>
+<fieldset>
+        <legend>Photo and Signature</legend>
+        <label for="file">Photo:*</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf" required><input type="submit" value="Upload"><br><br>
+        <label for="file">Signature:*</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf" required><input type="submit" value="Upload"><br><br>
+</fieldset>
+<fieldset>
+<legend>Fitness Certificate</legend>
+        <label for="file">Photo:*</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf" required><input type="submit" value="Upload"><br><br>	
+</fieldset>
+<input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+</fieldset>
+</form>
+</body>
+</html>
